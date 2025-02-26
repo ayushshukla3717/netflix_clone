@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Clone</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="header">
+        <nav>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Logonetflix.png" alt="Netflix Logo"
+                class="logo">
+            <button class="sign-in">Sign In</button>
+        </nav>
+        <div class="hero">
+            <h1>Unlimited movies, TV shows, and more</h1>
+            <p>Watch anywhere. Cancel anytime.</p>
+            <p>Ready to watch? Enter your email to create or restart your membership.</p>
+            <div class="email-box">
+                <input type="email" placeholder="Email address">
+                <button>Get Started ></button>
+            </div>
+        </div>
+    </div>
+    <div class="movies-section">
+        <h2>Popular Movies</h2>
+        <div class="movies">
+            <img src="https://image.tmdb.org/t/p/w500/A1NRkKzZ79eFzZy3Ifar5pHUwQF.jpg" alt="Movie 1">
+            <img src="https://image.tmdb.org/t/p/w500/qAZ0pzat24kLdO3o8ejmbLxyOac.jpg" alt="Movie 2">
+            <img src="https://image.tmdb.org/t/p/w500/6KErczPBROQty7QoIsaa6wJYXZi.jpg" alt="Movie 3">
+            <img src="https://image.tmdb.org/t/p/w500/wKiOkZTN9lUUUNZLmtnwubZYONg.jpg" alt="Movie 4">
+        </div>
+    </div>
+</body>
+
+</html>
+
+<style>
+    body {
+        font-family: 'Poppins', sans-serif;
+        margin: 0;
+        padding: 0;
+        background: black;
+        color: white;
+    }
+
+    .header {
+        background: url('background.jpg') no-repeat center center/cover;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        position: relative;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+        position: absolute;
+        top: 10px;
+    }
+
+    .logo {
+        width: 150px;
+    }
+
+    .sign-in {
+        background: red;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 4px;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+        font-weight: 600;
+    }
+
+    .email-box {
+        margin-top: 20px;
+    }
+
+    .email-box input {
+        padding: 10px;
+        width: 300px;
+        font-size: 16px;
+    }
+
+    .email-box button {
+        padding: 10px 20px;
+        background: red;
+        color: white;
+        border: none;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    .movies-section {
+        text-align: center;
+        padding: 20px;
+    }
+
+    .movies {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    .movies img {
+        width: 200px;
+        border-radius: 5px;
+    }
+</style>

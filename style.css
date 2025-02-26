@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.navbar .logo img {
+    width: 120px;
+}
+
+.navbar .nav-links a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+.navbar .nav-links a:hover {
+    text-decoration: underline;
+}
+
+.banner {
+    background-image: url('https://image.tmdb.org/t/p/w500/xmj61yYij5d6l6RUu6tvUNfpPTr.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.banner h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+.banner p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.banner button {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    background-color: red;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+
+.banner button:hover {
+    background-color: #b20000;
+}
+
+.row {
+    margin: 50px 20px;
+}
+
+.row h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.movie-list {
+    display: flex;
+    overflow-x: scroll;
+    gap: 10px;
+}
+
+.movie-list img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.movie-list img:hover {
+    transform: scale(1.1);
+}
+
+footer {
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 20px 0;
+}
+
+footer p {
+    font-size: 1rem;
+}
